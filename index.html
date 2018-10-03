@@ -57,6 +57,13 @@ footer a {
   white-space: nowrap;
 }
 
+@media (max-aspect-ratio: 1/1) {
+  footer a {
+    font-size: 1.5rem;
+    line-height: calc(var(--grid-v) * 1.5);
+  }
+}
+
 article {
   display: flex;
   align-items: center;
@@ -72,24 +79,31 @@ article {
   }
 }
 
-.ctas {
-  display: flex;
-}
-
 .ctas a {
   --top: 0.2rem;
-  --padding: calc(var(--grid-h) / 3);
+  --space: calc(var(--grid-h) / 3);
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: calc(var(--grid-v) - var(--top));
-  font-weight: bold;
 
-  margin-right: calc(var(--grid-h) / 3);
+  display: inline-block;
+  margin: var(--space) var(--space) 0 0;
   border: 0;
-  padding: 0 var(--padding) var(--top) var(--padding);
+  padding: 0 var(--space) var(--top) var(--space);
   transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
   background: var(--c-light-blue);
   white-space: nowrap;
+}
+
+.ctas a:last-child {
+  margin-right: 0;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .ctas a {
+    font-size: 1.5rem;
+    line-height: calc(var(--grid-v)*1.5 - var(--top));
+  }
 }
 
 .ctas a:hover {
@@ -112,14 +126,13 @@ article {
 }
 
 section {
-  width: calc(var(--grid-h) * 5);
+  width: calc(var(--grid-h) * 5.5);
 }
 
 .title p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: var(--grid-v);
-  font-weight: bold;
 }
 
 .details {
@@ -128,7 +141,7 @@ section {
 
 .details time, .details address {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: var(--grid-v);
 
   display: inline;
@@ -152,8 +165,8 @@ section {
           <address>Vilnius, Lithuania "Kablys", Kauno g. 5</address>
         </div>
         <div class="ctas">
-          <a href="mailto:hello@yougottalovefrontend.com?subject=Buy%20Ticket">Buy Ticket</a>
-          <a href="mailto:hello@yougottalovefrontend.com?subject=Become%20a%20Sponsor">Become a Sponsor</a>
+          <a href="mailto:hello@yougottalovefrontend.com?subject=Buy%20Ticket">Buy Ticket</a><!--
+          --><a href="mailto:hello@yougottalovefrontend.com?subject=Become%20a%20Sponsor">Become a Sponsor</a>
         </div>
       </section>
     </article>
