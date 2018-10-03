@@ -3,7 +3,162 @@
   <head>
     <meta charset="utf-8" />
     <title>You Gotta Love Frontend 2019 - Vilnius - Conference for front-end developers</title>
+    <style>
+html {
+  font-size: 2vmin;
+  --c-light-blue: #5acca0;
+  --c-grey: #e8e6e6;
+  --c-blue: #3a47e4;
+  --c-white: #ffffff;
+  --grid-v: 2.5rem;
+  --grid-h: 4.44rem;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  html {
+    font-size: 3vmin;
+  }
+}
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: var(--c-white);
+  box-sizing: border-box;
+}
+
+.footer {
+  background: var(--c-grey);
+  padding: var(--grid-v) 0;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .footer p {
+    flex-direction: column;
+  }
+}
+
+.footer a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: var(--grid-v);
+  color: var(--c-blue);
+
+  margin: 0 var(--grid-v);
+  white-space: nowrap;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--c-blue);
+  padding-bottom: var(--grid-v);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .body {
+    flex-direction: column;
+  }
+}
+
+.ctas {
+  display: flex;
+}
+
+.ctas a {
+  --top: 0.2rem;
+  --padding: calc(var(--grid-h) / 3);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: calc(var(--grid-v) - var(--top));
+  font-weight: bold;
+
+  margin-right: calc(var(--grid-h) / 3);
+  border: 0;
+  padding: 0 var(--padding) var(--top) var(--padding);
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  background: var(--c-light-blue);
+  white-space: nowrap;
+}
+
+.ctas a:hover {
+  color: var(--c-blue);
+  background: var(--c-white);
+}
+
+.logo {
+  padding: calc(var(--grid-h) * 1.3);
+}
+
+.logo p {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 14rem;
+  line-height: calc(var(--grid-v) * 5);
+
+  text-align: center;
+  color: var(--c-light-blue);
+  white-space: nowrap;
+}
+
+.title {
+  width: calc(var(--grid-h) * 4.5);
+}
+
+.title p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: var(--grid-v);
+  font-weight: bold;
+}
+
+.details {
+  margin: var(--grid-v) 0;
+}
+
+.details p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: var(--grid-v);
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
   </head>
   <body>
+    <div class="body">
+      <div class="logo">
+        <p>Y G</p>
+        <p>L F</p>
+      </div>
+      <div class="content">
+        <div class="title">
+          <p>SAVE THE DATE!</p>
+          <p>You Gotta Love Frontend Conference</p>
+        </div>
+        <div class="details">
+          <p>May 16-17, 2019 Vilnius, Lithuania</p>
+          <p>"Kablys", Kauno g. 5</p>
+        </div>
+        <div class="ctas">
+          <a href="mailto:hello@yougottalovefrontend.com?subject=Buy%20Ticket">Buy Ticket</a>
+          <a href="mailto:hello@yougottalovefrontend.com?subject=Become%20a%20Sponsor">Become a Sponsor</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        <a href="http://2017.yougottalovefrontend.com/">YGLF Tel Aviv 2017</a>
+        <a href="http://yglf.com.ua/">YGLF Kiev 2018</a>
+        <a href="/code-of-conduct.html">Code of Conduct</a>
+      </p>
+    </div>
   </body>
 </html>
