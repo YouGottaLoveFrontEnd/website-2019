@@ -26,26 +26,28 @@ html {
   padding: 0;
   color: var(--c-white);
   box-sizing: border-box;
+  font-family: inherit;
+  font-style: normal;
 }
 
-.footer {
+footer {
   background: var(--c-grey);
   padding: var(--grid-v) 0;
 }
 
-.footer p {
+footer p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-aspect-ratio: 1/1) {
-  .footer p {
+  footer p {
     flex-direction: column;
   }
 }
 
-.footer a {
+footer a {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: var(--grid-v);
@@ -55,7 +57,7 @@ html {
   white-space: nowrap;
 }
 
-.body {
+article {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +67,7 @@ html {
 }
 
 @media (max-aspect-ratio: 1/1) {
-  .body {
+  article {
     flex-direction: column;
   }
 }
@@ -109,8 +111,8 @@ html {
   white-space: nowrap;
 }
 
-.title {
-  width: calc(var(--grid-h) * 4.5);
+section {
+  width: calc(var(--grid-h) * 5);
 }
 
 .title p {
@@ -124,41 +126,43 @@ html {
   margin: var(--grid-v) 0;
 }
 
-.details p {
+.details time, .details address {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3rem;
   line-height: var(--grid-v);
+
+  display: inline;
 }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
   </head>
   <body>
-    <div class="body">
+    <article>
       <div class="logo">
         <p>Y G</p>
         <p>L F</p>
       </div>
-      <div class="content">
+      <section>
         <div class="title">
           <p>SAVE THE DATE!</p>
           <p>You Gotta Love Frontend Conference</p>
         </div>
         <div class="details">
-          <p>May 16-17, 2019 Vilnius, Lithuania</p>
-          <p>"Kablys", Kauno g. 5</p>
+          <time>May 16-17, 2019</time>
+          <address>Vilnius, Lithuania "Kablys", Kauno g. 5</address>
         </div>
         <div class="ctas">
           <a href="mailto:hello@yougottalovefrontend.com?subject=Buy%20Ticket">Buy Ticket</a>
           <a href="mailto:hello@yougottalovefrontend.com?subject=Become%20a%20Sponsor">Become a Sponsor</a>
         </div>
-      </div>
-    </div>
-    <div class="footer">
+      </section>
+    </article>
+    <footer>
       <p>
         <a href="http://2017.yougottalovefrontend.com/">YGLF Tel Aviv 2017</a>
         <a href="http://yglf.com.ua/">YGLF Kiev 2018</a>
         <a href="code-of-conduct.html">Code of Conduct</a>
       </p>
-    </div>
+    </footer>
   </body>
 </html>
