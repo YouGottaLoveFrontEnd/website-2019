@@ -30,6 +30,10 @@ html {
   font-style: normal;
 }
 
+body {
+  background: var(--c-blue);
+}
+
 footer {
   background: var(--c-grey);
   padding: var(--grid-v) 0;
@@ -69,13 +73,14 @@ article {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: var(--c-blue);
   padding-bottom: var(--grid-v);
+  transform: translate(-4rem, 0);
 }
 
 @media (max-aspect-ratio: 1/1) {
   article {
     flex-direction: column;
+    transform: translate(0, 0);
   }
 }
 
@@ -83,8 +88,8 @@ article {
   --top: 0.2rem;
   --space: calc(var(--grid-h) / 3);
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  line-height: calc(var(--grid-v) - var(--top));
+  font-size: 0.75rem;
+  line-height: calc(var(--grid-v)*0.75 - var(--top));
 
   display: inline-block;
   margin: var(--space) var(--space) 0 0;
@@ -126,25 +131,73 @@ article {
 }
 
 section {
-  width: calc(var(--grid-h) * 5.5);
+  width: calc(var(--grid-h) * 4.5);
+  position: relative;
 }
 
 .title p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: var(--grid-v);
+  white-space: nowrap;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .title p {
+    font-size: 2rem;
+  }
 }
 
 .details {
-  margin: var(--grid-v) 0;
+  margin: calc(var(--grid-v)*0.5) 0;
+  white-space: nowrap;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .details {
+    margin: var(--grid-v) 0;
+  }
 }
 
 .details time, .details address {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
-  line-height: var(--grid-v);
+  font-size: 1rem;
+  line-height: 1.5rem;
 
   display: inline;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .details time, .details address {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.top {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  transform: translate(4rem, -13rem);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .top {
+    transform: translate(0, -7rem);
+  }
+}
+
+.bottom {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  transform: translate(4rem, 0rem);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .bottom {
+    transform: translate(0, 0rem);
+  }
 }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
@@ -152,17 +205,19 @@ section {
   <body>
     <article>
       <div class="logo">
+        <img class="top" src="top-background.png" alt="top background" />
         <p>Y G</p>
         <p>L F</p>
+        <img class="bottom" src="bottom-background.png" alt="bottom background" />
       </div>
       <section>
         <div class="title">
           <p>SAVE THE DATE!</p>
-          <p>You Gotta Love Frontend Conference</p>
+          <p>You Gotta Love Frontend<br>Conference</p>
         </div>
         <div class="details">
           <time>May 16-17, 2019</time>
-          <address>Vilnius, Lithuania "Kablys", Kauno g. 5</address>
+          <address>Vilnius, Lithuania<br>"Kablys", Kauno g. 5</address>
         </div>
         <div class="ctas">
           <a href="mailto:hello@yougottalovefrontend.com?subject=Buy%20Ticket">Buy Ticket</a><!--
