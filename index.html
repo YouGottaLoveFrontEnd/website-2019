@@ -75,13 +75,18 @@ article {
   justify-content: center;
   min-height: 100vh;
   padding-bottom: var(--grid-v);
-  transform: translate(-4rem, 0);
+  overflow: hidden;
+  background-image: url(bottom-background.png);
+  background-position: bottom -9rem left 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (max-aspect-ratio: 1/1) {
   article {
     flex-direction: column;
     transform: translate(0, 0);
+    background-position: bottom 0 left 0;
   }
 }
 
@@ -129,11 +134,13 @@ article {
   text-align: center;
   color: var(--c-light-blue);
   white-space: nowrap;
+  transform: translate(-4rem, 0);
 }
 
 section {
   width: calc(var(--grid-h) * 4.5);
   position: relative;
+  transform: translate(-4rem, 0);
 }
 
 .title p {
@@ -179,25 +186,12 @@ section {
   width: 100%;
   position: absolute;
   left: 0;
-  transform: translate(4rem, -13rem);
+  transform: translate(0, -13rem);
 }
 
 @media (max-aspect-ratio: 1/1) {
   .top {
     transform: translate(0, -7rem);
-  }
-}
-
-.bottom {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  transform: translate(4rem, 0rem);
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .bottom {
-    transform: translate(0, 0rem);
   }
 }
     </style>
@@ -209,7 +203,6 @@ section {
         <img class="top" src="top-background.png" alt="top background" />
         <p>Y G</p>
         <p>L F</p>
-        <img class="bottom" src="bottom-background.png" alt="bottom background" />
       </div>
       <section>
         <div class="title">
