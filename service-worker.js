@@ -1,4 +1,3 @@
-'use strict';
 function setOfCachedUrls(e) {
   return e
     .keys()
@@ -12,9 +11,9 @@ function setOfCachedUrls(e) {
     });
 }
 var precacheConfig = [
-    ['index.html', '03f95bd5d2272b24904e48a1c9c55555'],
-    ['static/css/main.ce810b71.css', 'f3921908f3eeb8a62c54fb64d0355555'],
-    ['static/js/main.75d5b714.js', 'a3c1ac1ec8f90222af0d30e013a55555']
+    ['index.html', '03f95bd5d2272b24904e48a1c9c4b5fa'],
+    ['static/css/main.ce810b71.css', 'f3921908f3eeb8a62c54fb64d03fbaa9'],
+    ['static/js/main.75d5b714.js', 'a3c1ac1ec8f90222af0d30e013ac04a7']
   ],
   cacheName =
     'sw-precache-v3-sw-precache-webpack-plugin-' +

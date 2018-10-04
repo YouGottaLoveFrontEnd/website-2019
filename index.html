@@ -1,246 +1,253 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>You Gotta Love Frontend 2019 - Vilnius - Conference for front-end developers</title>
-    <style>
-html {
-  font-size: 2vmin;
-  --c-light-blue: #5acca0;
-  --c-grey: #e8e6e6;
-  --c-blue: #3a47e4;
-  --c-white: #ffffff;
-  --grid-v: 2.5rem;
-  --grid-h: 4.44rem;
-}
 
-@media (max-aspect-ratio: 1/1) {
-  html {
-    font-size: 3vmin;
-  }
-}
+<head>
+  <meta charset="utf-8" />
+  <title>You Gotta Love Frontend 2019 - Vilnius - Conference for front-end developers</title>
+  <style>
+    html {
+      font-size: 2vmin;
+      --c-light-blue: #5acca0;
+      --c-grey: #e8e6e6;
+      --c-blue: #3a47e4;
+      --c-white: #ffffff;
+      --grid-v: 2.5rem;
+      --grid-h: 4.44rem;
+    }
 
-* {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  color: var(--c-white);
-  box-sizing: border-box;
-  font-family: inherit;
-  font-style: normal;
-}
+    @media (max-aspect-ratio: 1/1) {
+      html {
+        font-size: 3vmin;
+      }
+    }
 
-body {
-  background: var(--c-blue);
-}
+    * {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      color: var(--c-white);
+      box-sizing: border-box;
+      font-family: inherit;
+      font-style: normal;
+    }
 
-footer {
-  background: var(--c-grey);
-  padding: var(--grid-v) 0;
-}
+    body {
+      background: var(--c-blue);
+    }
 
-footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    footer {
+      background: var(--c-grey);
+      padding: var(--grid-v) 0;
+    }
 
-@media (max-aspect-ratio: 1/1) {
-  footer p {
-    flex-direction: column;
-  }
-}
+    footer p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-footer a {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  line-height: var(--grid-v);
-  color: var(--c-blue);
+    @media (max-aspect-ratio: 1/1) {
+      footer p {
+        flex-direction: column;
+      }
+    }
 
-  margin: 0 var(--grid-v);
-  white-space: nowrap;
-}
+    footer a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      line-height: var(--grid-v);
+      color: var(--c-blue);
 
-@media (max-aspect-ratio: 1/1) {
-  footer a {
-    font-size: 1.5rem;
-    line-height: calc(var(--grid-v) * 1.5);
-  }
-}
+      margin: 0 var(--grid-v);
+      white-space: nowrap;
+    }
 
-article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding-bottom: var(--grid-v);
-  overflow: hidden;
-  background-image: url(bottom-background.png);
-  background-position: bottom -9rem left 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+    @media (max-aspect-ratio: 1/1) {
+      footer a {
+        font-size: 1.5rem;
+        line-height: calc(var(--grid-v) * 1.5);
+      }
+    }
 
-@media (max-aspect-ratio: 1/1) {
-  article {
-    flex-direction: column;
-    transform: translate(0, 0);
-    background-position: bottom 0 left 0;
-  }
-}
+    article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding-bottom: var(--grid-v);
+      overflow: hidden;
+      background-image: url(bottom-background.png);
+      background-position: bottom -9rem left 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 
-.ctas a {
-  --top: 0.2rem;
-  --space: calc(var(--grid-h) / 3);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.75rem;
-  line-height: calc(var(--grid-v)*0.75 - var(--top));
+    @media (max-aspect-ratio: 1/1) {
+      article {
+        flex-direction: column;
+        transform: translate(0, 0);
+        background-position: bottom 0 left 0;
+      }
+    }
 
-  display: inline-block;
-  margin: var(--space) var(--space) 0 0;
-  border: 0;
-  padding: 0 var(--space) var(--top) var(--space);
-  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-  background: var(--c-light-blue);
-  white-space: nowrap;
-}
+    .ctas a {
+      --top: 0.2rem;
+      --space: calc(var(--grid-h) / 3);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.75rem;
+      line-height: calc(var(--grid-v)*0.75 - var(--top));
 
-.ctas a:last-child {
-  margin-right: 0;
-}
+      display: inline-block;
+      margin: var(--space) var(--space) 0 0;
+      border: 0;
+      padding: 0 var(--space) var(--top) var(--space);
+      transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+      background: var(--c-light-blue);
+      white-space: nowrap;
+    }
 
-@media (max-aspect-ratio: 1/1) {
-  .ctas a {
-    font-size: 1.5rem;
-    line-height: calc(var(--grid-v)*1.5 - var(--top));
-  }
-}
+    .ctas a:last-child {
+      margin-right: 0;
+    }
 
-.ctas a:hover {
-  color: var(--c-blue);
-  background: var(--c-white);
-}
+    @media (max-aspect-ratio: 1/1) {
+      .ctas a {
+        font-size: 1.5rem;
+        line-height: calc(var(--grid-v)*1.5 - var(--top));
+      }
+    }
 
-.logo {
-  padding: calc(var(--grid-h) * 1.3);
-}
+    .ctas a:hover {
+      color: var(--c-blue);
+      background: var(--c-white);
+    }
 
-.logo p {
-  font-family: 'Didact Gothic', sans-serif;
-  font-size: 14rem;
-  line-height: calc(var(--grid-v) * 5);
+    .logo {
+      padding: calc(var(--grid-h) * 1.3);
+    }
 
-  text-align: center;
-  color: var(--c-light-blue);
-  white-space: nowrap;
-  transform: translate(-4rem, 0);
-}
+    .logo p {
+      font-family: 'Didact Gothic', sans-serif;
+      font-size: 14rem;
+      line-height: calc(var(--grid-v) * 5);
 
-section {
-  width: calc(var(--grid-h) * 4.5);
-  transform: translate(-4rem, 0);
-}
+      text-align: center;
+      color: var(--c-light-blue);
+      white-space: nowrap;
+      transform: translate(-4rem, 0);
+    }
 
-.title p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
-  line-height: var(--grid-v);
-  white-space: nowrap;
-}
+    section {
+      width: calc(var(--grid-h) * 4.5);
+      transform: translate(-4rem, 0);
+    }
 
-@media (max-aspect-ratio: 1/1) {
-  .title p {
-    font-size: 2rem;
-  }
-}
+    .title p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5rem;
+      line-height: var(--grid-v);
+      white-space: nowrap;
+    }
 
-.details {
-  margin: calc(var(--grid-v)*0.5) 0;
-  white-space: nowrap;
-}
+    @media (max-aspect-ratio: 1/1) {
+      .title p {
+        font-size: 2rem;
+      }
+    }
 
-@media (max-aspect-ratio: 1/1) {
-  .details {
-    margin: var(--grid-v) 0;
-  }
-}
+    .details {
+      margin: calc(var(--grid-v)*0.5) 0;
+      white-space: nowrap;
+    }
 
-.details time, .details address {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+    @media (max-aspect-ratio: 1/1) {
+      .details {
+        margin: var(--grid-v) 0;
+      }
+    }
 
-  display: inline;
-}
+    .details time,
+    .details address {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5rem;
 
-@media (max-aspect-ratio: 1/1) {
-  .details time, .details address {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
+      display: inline;
+    }
 
-.top {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  transform: translate(0, -13rem);
-}
+    @media (max-aspect-ratio: 1/1) {
+      .details time,
+      .details address {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
 
-@media (max-aspect-ratio: 1/1) {
-  .top {
-    transform: translate(0, -7rem);
-  }
-}
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
-  </head>
-  <body>
-    <article>
-      <div class="logo">
-        <img class="top" src="top-background.png" alt="top background" />
-        <p>Y G</p>
-        <p>L F</p>
+    .top {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      transform: translate(0, -13rem);
+    }
+
+    @media (max-aspect-ratio: 1/1) {
+      .top {
+        transform: translate(0, -7rem);
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <article>
+    <div class="logo">
+      <img class="top" src="top-background.png" alt="top background" />
+      <p>Y G</p>
+      <p>L F</p>
+    </div>
+    <section>
+      <div class="title">
+        <p>SAVE THE DATE!</p>
+        <p>You Gotta Love Frontend
+          <br>Conference</p>
       </div>
-      <section>
-        <div class="title">
-          <p>SAVE THE DATE!</p>
-          <p>You Gotta Love Frontend<br>Conference</p>
-        </div>
-        <div class="details">
-          <time>May 16-17, 2019</time>
-          <address>Vilnius, Lithuania</address>
-        </div>
-        <div class="ctas">
-          <a href="mailto:hello@yougottalovefrontend.com?subject=Buy%20Ticket">Buy Ticket</a><!--
-          --><a href="mailto:hello@yougottalovefrontend.com?subject=Become%20a%20Sponsor">Become a Sponsor</a>
-        </div>
-      </section>
-    </article>
-    <footer>
-      <p>
-        <a href="http://2017.yougottalovefrontend.com/">YGLF Tel Aviv 2017</a>
-        <a href="http://yglf.com.ua/">YGLF Kiev 2018</a>
-        <a href="code-of-conduct.html">Code of Conduct</a>
-      </p>
-    </footer>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
-    <script>navigator.serviceWorker.getRegistrations().then(function (registrations) {
-  if (!registrations.length) {
-    console.log('No serviceWorker registrations found.')
-    return
-  }
-  for(let registration of registrations) {
-    registration.unregister().then(function (boolean) {
-      console.log(
-        (boolean ? 'Successfully unregistered' : 'Failed to unregister'), 'ServiceWorkerRegistration\n' +
-        (registration.installing ? '  .installing.scriptURL = ' + registration.installing.scriptURL + '\n' : '') +
-        (registration.waiting ? '  .waiting.scriptURL = ' + registration.waiting.scriptURL + '\n' : '') +
-        (registration.active ? '  .active.scriptURL = ' + registration.active.scriptURL + '\n' : '') +
-        '  .scope: ' + registration.scope + '\n'
-      )
-    })
-  }
-      })</script>
-  </body>
+      <div class="details">
+        <time>May 16-17, 2019</time>
+        <address>Vilnius, Lithuania</address>
+      </div>
+      <div class="ctas">
+        <a href="mailto:hello@yougottalovefrontend.com?subject=Buy%20Ticket">Buy Ticket</a>
+        <!--
+          -->
+        <a href="mailto:hello@yougottalovefrontend.com?subject=Become%20a%20Sponsor">Become a Sponsor</a>
+      </div>
+    </section>
+  </article>
+  <footer>
+    <p>
+      <a href="http://2017.yougottalovefrontend.com/">YGLF Tel Aviv 2017</a>
+      <a href="http://yglf.com.ua/">YGLF Kiev 2018</a>
+      <a href="code-of-conduct.html">Code of Conduct</a>
+    </p>
+  </footer>
+  <script>navigator.serviceWorker.getRegistrations().then(function (registrations) {
+      if (!registrations.length) {
+        console.log('No serviceWorker registrations found.')
+        return
+      }
+      for (let registration of registrations) {
+        registration.unregister().then(function (boolean) {
+          console.log(
+            (boolean ? 'Successfully unregistered' : 'Failed to unregister'), 'ServiceWorkerRegistration\n' +
+            (registration.installing ? '  .installing.scriptURL = ' + registration.installing.scriptURL + '\n' : '') +
+            (registration.waiting ? '  .waiting.scriptURL = ' + registration.waiting.scriptURL + '\n' : '') +
+            (registration.active ? '  .active.scriptURL = ' + registration.active.scriptURL + '\n' : '') +
+            '  .scope: ' + registration.scope + '\n'
+          )
+        })
+      }
+    })</script>
+</body>
+
 </html>
