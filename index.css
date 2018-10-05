@@ -20,7 +20,7 @@ html {
   padding: 0;
   color: var(--c-white);
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -53,47 +53,29 @@ article {
   background-size: contain;
 }
 
+section {
+  width: calc(var(--grid-h) * 4.5);
+  transform: translate(-4rem, 0);
+}
+
+.logo {
+  padding: calc(var(--grid-h) * 1.3);
+}
+
 @media (max-aspect-ratio: 1/1) {
   article {
     flex-direction: column;
     transform: translate(0, 0);
     background-position: bottom 0 left 0;
   }
-}
 
-.ctas a {
-  --top: 0.2rem;
-  --space: calc(var(--grid-h) / 3);
-  font-size: 0.75rem;
-  line-height: calc(var(--grid-v) * 0.75 - var(--top));
-
-  display: inline-block;
-  margin: var(--space) var(--space) 0 0;
-  border: 0;
-  padding: 0 var(--space) var(--top) var(--space);
-  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
-  background: var(--c-light-blue);
-  white-space: nowrap;
-}
-
-.ctas a:last-child {
-  margin-right: 0;
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .ctas a {
-    font-size: 1.5rem;
-    line-height: calc(var(--grid-v) * 1.5 - var(--top));
+  section {
+    transform: translate(-2rem, 0);
   }
-}
 
-.ctas a:hover {
-  color: var(--c-blue);
-  background: var(--c-white);
-}
-
-.logo {
-  padding: calc(var(--grid-h) * 1.3);
+  .logo {
+    padding: 0;
+  }
 }
 
 .logo p {
@@ -102,11 +84,6 @@ article {
   text-align: center;
   color: var(--c-light-blue);
   white-space: nowrap;
-  transform: translate(-4rem, 0);
-}
-
-section {
-  width: calc(var(--grid-h) * 4.5);
   transform: translate(-4rem, 0);
 }
 
