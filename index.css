@@ -8,6 +8,12 @@ html {
   --grid-h: 4.44rem;
 }
 
+@font-face {
+  font-family: 'Proxima-N-W01-Reg';
+  src: url('//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2')
+    format('woff2');
+}
+
 @media (max-aspect-ratio: 1/1) {
   html {
     font-size: 3vmin;
@@ -20,8 +26,7 @@ html {
   padding: 0;
   color: var(--c-white);
   box-sizing: border-box;
-  font-family: inherit;
-  font-style: normal;
+  font: normal normal normal 17px/1.4em Proxima-N-W01-Reg, sans-serif;
 }
 
 body {
