@@ -8,11 +8,6 @@ html {
   --grid-h: 4.44rem;
 }
 
-@font-face {
-  font-family: Fontello;
-  src: url('assets/fontello.woff2') format('woff2');
-}
-
 @media (max-aspect-ratio: 1/1) {
   html {
     font-size: 3vmin;
@@ -25,7 +20,7 @@ html {
   padding: 0;
   color: var(--c-white);
   box-sizing: border-box;
-  font-family: Fontello;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
