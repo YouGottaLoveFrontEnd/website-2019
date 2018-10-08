@@ -30,11 +30,14 @@ body {
 h1 {
   font-size: 2.4rem;
   font-weight: 500;
+  padding: 0 0 20px 0;
+  color: #05cf9d;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 400;
+  padding: 0 0 20px 0;
 }
 
 article {
@@ -42,9 +45,6 @@ article {
   max-width: 1160px;
   margin: 0 auto;
   padding: 60px;
-  background-position: bottom -9rem left 0;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -97,7 +97,6 @@ footer a {
   font-size: 1rem;
   line-height: var(--grid-v);
   color: var(--c-blue);
-
   margin: 0 var(--grid-v);
   white-space: nowrap;
 }
