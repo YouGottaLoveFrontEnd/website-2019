@@ -8,6 +8,11 @@ html {
   --grid-h: 4.44rem;
 }
 
+@font-face {
+  font-family: SofiaPro;
+  src: url('assets/Sofia-Pro-Light.otf');
+}
+
 @media (max-aspect-ratio: 1/1) {
   html {
     font-size: 3vmin;
@@ -20,7 +25,7 @@ html {
   padding: 0;
   color: var(--c-white);
   box-sizing: border-box;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'SofiaPro', sans-serif;
 }
 
 body {

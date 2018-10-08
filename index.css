@@ -14,13 +14,18 @@ html {
   }
 }
 
+@font-face {
+  font-family: SofiaPro;
+  src: url('assets/Sofia-Pro-Light.otf');
+}
+
 * {
   text-decoration: none;
   margin: 0;
   padding: 0;
   color: var(--c-white);
   box-sizing: border-box;
-  font-family: 'sofia-pro', sans-serif;
+  font-family: 'SofiaPro', sans-serif;
 }
 
 body {
