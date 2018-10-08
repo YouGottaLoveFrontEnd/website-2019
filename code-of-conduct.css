@@ -47,6 +47,12 @@ article {
   background-size: contain;
 }
 
+@media (max-aspect-ratio: 1/1) {
+  article {
+    padding: 30px;
+  }
+}
+
 section {
   padding: 20px;
   font-weight: normal;
