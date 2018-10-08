@@ -116,11 +116,12 @@ section {
 .details address {
   font-size: 1rem;
   line-height: 1.5rem;
-
-  display: inline;
 }
 
 @media (max-aspect-ratio: 1/1) {
+  .details {
+    text-align: center;
+  }
   .details time,
   .details address {
     font-size: 1.5rem;
