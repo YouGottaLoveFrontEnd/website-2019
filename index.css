@@ -20,7 +20,7 @@ html {
   padding: 0;
   color: var(--c-white);
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'sofia-pro', sans-serif;
 }
 
 body {
@@ -80,7 +80,6 @@ section {
 
 .logo p {
   line-height: calc(var(--grid-v) * 5);
-
   text-align: center;
   color: var(--c-light-blue);
   white-space: nowrap;
@@ -89,21 +88,20 @@ section {
 
 .title p {
   font-size: 1.5rem;
-  font-weight: bold;
   line-height: var(--grid-v);
   white-space: nowrap;
 }
 
 @media (max-aspect-ratio: 1/1) {
   .title p {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.75rem;
   }
 }
 
 .details {
   margin: calc(var(--grid-v) * 0.5) 0;
   font-size: 1.25rem;
-  font-weight: normal;
   white-space: nowrap;
 }
 
@@ -115,7 +113,6 @@ section {
 
 .details time,
 .details address {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 
@@ -148,7 +145,6 @@ footer p {
 }
 
 footer a {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: var(--grid-v);
   color: var(--c-blue);
