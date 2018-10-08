@@ -31,13 +31,7 @@ body {
   width: 100%;
   position: absolute;
   left: 0;
-  transform: translate(0, -13rem);
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .top-background {
-    transform: translate(0, -7rem);
-  }
+  transform: translate(0, -20rem);
 }
 
 article {
@@ -55,7 +49,18 @@ article {
 
 section {
   width: calc(var(--grid-h) * 4.5);
-  transform: translate(-4rem, 0);
+}
+
+.logo-yglf {
+  width: 408px;
+  height: 437px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .logo-yglf {
+    width: 260px;
+    height: 270px;
+  }
 }
 
 .logo {
@@ -67,10 +72,6 @@ section {
     flex-direction: column;
     transform: translate(0, 0);
     background-position: bottom 0 left 0;
-  }
-
-  section {
-    transform: translate(-2rem, 0);
   }
 
   .logo {
