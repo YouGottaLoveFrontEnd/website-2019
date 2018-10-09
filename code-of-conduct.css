@@ -63,16 +63,11 @@ section {
   font-weight: normal;
 }
 
-section h1,
-section h3 {
-  padding: 0 0 20px 0;
-}
-
 section p {
   font-size: 0.75rem;
-  letter-spacing: 0.9px;
+  letter-spacing: 1px;
   font-weight: 100;
-  line-height: 1.45rem;
+  line-height: 1.5rem;
 }
 
 @media (max-aspect-ratio: 1/1) {
