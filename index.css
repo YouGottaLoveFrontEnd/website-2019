@@ -219,8 +219,9 @@ footer a {
 }
 
 .ghost-button a:hover {
-  color: var(--c-white);
-  background: var(--c-light-green);
+  background-color: rgba(255, 255, 255, 1);
+  border-color: transparent;
+  color: #3a47e4;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -254,6 +255,12 @@ footer a {
   border: 1px solid var(--c-light-green);
   white-space: nowrap;
   width: 100%;
+}
+
+.filled-button-cfp a:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-color: transparent;
+  color: #3a47e4;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -291,6 +298,12 @@ footer a {
   border: 1px solid var(--c-light-green);
   white-space: nowrap;
   width: 100%;
+}
+
+.filled-button-subscribe a:hover {
+  background-color: rgba(255, 255, 255, 1);
+  border-color: transparent;
+  color: #3a47e4;
 }
 
 @media (max-aspect-ratio: 1/1) {
