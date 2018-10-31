@@ -69,6 +69,7 @@ section {
 }
 
 .logo {
+  margin-top: 30px;
   padding: calc(var(--grid-h) * 1.3);
 }
 
