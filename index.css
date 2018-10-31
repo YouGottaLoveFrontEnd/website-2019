@@ -205,7 +205,8 @@ footer a {
   --top: 0.2rem;
   --space: calc(var(--grid-h) / 3);
   color: var(--c-light-green);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   text-align: center;
   background: transparent;
   border-radius: 30px;
@@ -244,7 +245,8 @@ footer a {
   color: var(--c-light-white);
   background: var(--c-light-green);
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   line-height: calc(var(--grid-v) * 0.75 - var(--top));
   border-radius: 30px;
   padding: var(--top) var(--space) var(--top) var(--space);
@@ -280,7 +282,8 @@ footer a {
   color: var(--c-light-white);
   background: var(--c-light-green);
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   line-height: calc(var(--grid-v) * 0.75 - var(--top));
   border-radius: 30px;
   padding: var(--top) var(--space) var(--top) var(--space);
