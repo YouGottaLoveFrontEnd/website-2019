@@ -238,6 +238,7 @@ footer a {
   align-items: center;
   justify-content: center;
   width: 100%;
+  box-sizing: content-box;
 }
 
 .filled-button-cfp a {
@@ -278,9 +279,9 @@ footer a {
 .filled-button-subscribe {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   padding-left: 10px;
+  box-sizing: content-box;
 }
 
 .filled-button-subscribe a {
