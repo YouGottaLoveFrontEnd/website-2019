@@ -39,6 +39,12 @@ header {
   height: 437px;
 }
 
+@media (max-aspect-ratio: 1/1) {
+  .yglf-logo {
+    width: 100%;
+  }
+}
+
 body {
   background: var(--c-blue);
 }
@@ -55,7 +61,6 @@ article {
   position: relative;
   max-width: 1160px;
   margin: 0 auto;
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -67,7 +72,7 @@ article {
 
 @media (max-aspect-ratio: 1/1) {
   article {
-    padding: 30px;
+    flex-direction: column;
   }
 }
 
@@ -83,6 +88,12 @@ section {
   display: flex;
 }
 
+@media (max-aspect-ratio: 1/1) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 .box {
   display: flex;
   flex-direction: column;
@@ -94,10 +105,24 @@ img {
   cursor: default;
 }
 
+@media (max-aspect-ratio: 1/1) {
+  img {
+    width: 60vw;
+    height: auto;
+  }
+}
+
 .box span {
   font-weight: 500;
   font-size: 0.8rem;
   margin: 0.6rem 0 0.3rem;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .box span {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 
 footer {
