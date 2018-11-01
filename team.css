@@ -60,6 +60,7 @@ h1 {
 article {
   position: relative;
   max-width: 1160px;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -73,6 +74,7 @@ article {
 @media (max-aspect-ratio: 1/1) {
   article {
     flex-direction: column;
+    height: 100%;
   }
 }
 
