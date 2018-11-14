@@ -1,6 +1,11 @@
+@font-face {
+  font-family: SofiaPro;
+  src: url('assets/Sofia-Pro-Light.otf');
+}
+
 html {
-  font-size: 2vmin;
-  --c-light-blue: #5acca0;
+  font-size: 16px;
+  --c-ylgf-green: #05cf9d;
   --c-grey: #e8e6e6;
   --c-blue: #3a47e4;
   --c-white: #ffffff;
@@ -8,124 +13,88 @@ html {
   --grid-h: 4.44rem;
 }
 
-@font-face {
-  font-family: SofiaPro;
-  src: url('assets/Sofia-Pro-Light.otf');
-}
-
-@media (max-aspect-ratio: 1/1) {
-  html {
-    font-size: 3vmin;
-  }
-}
-
-* {
+body {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  background: var(--c-blue);
   color: var(--c-white);
   box-sizing: border-box;
   font-family: 'SofiaPro', sans-serif;
 }
 
-header {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  height: 120px;
-}
-
-.yglf-logo {
-  width: 408px;
-  height: 437px;
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .yglf-logo {
-    width: 100%;
-  }
-}
-
-body {
-  background: var(--c-blue);
-}
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 500;
-  padding: 0 0 20px 0;
-  color: #05cf9d;
-  text-align: center;
-}
-
 article {
   position: relative;
-  max-width: 1160px;
-  height: 100vh;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
+header {
+  border-bottom: 1px solid #05cf9d;
+  color: var(--c-ylgf-green);
 }
 
-@media (max-aspect-ratio: 1/1) {
-  article {
-    flex-direction: column;
-    height: 100%;
-  }
+header h1 {
+  margin: 0;
+  line-height: 44px;
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  padding: 0.625rem;
 }
+
+.container-fluid {
+  padding-top: 20px;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  border-left: 1px solid var(--c-ylgf-green);
+  border-right: 1px solid var(--c-ylgf-green);
+}
+
+/* Content */
 
 section {
-  padding: 20px;
-  font-weight: normal;
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+section h2 {
+  text-align: center;
+  font-size: 2.8125rem;
+  color: var(--c-ylgf-green);
+}
+
 .row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media (max-aspect-ratio: 1/1) {
-  .row {
-    flex-direction: column;
-  }
+.row .person {
+  padding: 0 4.375rem 4.375rem 4.375rem;
+  width: 300px;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
+.row .person:nth-child(3n + 2) {
+  padding-top: calc(4rem * 2);
 }
 
-img {
-  height: 13vh;
-  cursor: default;
+.profile {
+  width: 100%;
+  box-shadow: 40px 17px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
-@media (max-aspect-ratio: 1/1) {
-  img {
-    width: 60vw;
-    height: auto;
-  }
+.person .name {
+  font-size: 1.5625rem;
+  line-height: 3.5625rem;
 }
 
-.box span {
-  font-weight: 500;
-  font-size: 0.8rem;
-  margin: 0.6rem 0 0.3rem;
-}
-
-@media (max-aspect-ratio: 1/1) {
-  .box span {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-}
+/* Footer */
 
 footer {
   background: var(--c-grey);
