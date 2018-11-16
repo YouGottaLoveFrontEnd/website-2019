@@ -245,6 +245,7 @@ footer a {
 .filled-button-cfp a {
   --top: 0.2rem;
   --space: calc(var(--grid-h) / 3);
+  min-width: 80px;
   color: var(--c-light-white);
   background: var(--c-light-green);
   text-align: center;
@@ -288,6 +289,7 @@ footer a {
 .filled-button-subscribe a {
   --top: 0.2rem;
   --space: calc(var(--grid-h) / 3);
+  min-width: 80px;
   color: var(--c-light-white);
   background: var(--c-light-green);
   text-align: center;
