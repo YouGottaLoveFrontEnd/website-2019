@@ -162,16 +162,18 @@ footer p {
 }
 
 footer a {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   line-height: var(--grid-v);
   color: var(--c-blue);
   margin: 0 var(--grid-v);
   white-space: nowrap;
+  
 }
 
 @media (max-aspect-ratio: 1/1) {
   footer a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: calc(var(--grid-v) * 1.5);
   }
 }
