@@ -89,8 +89,12 @@ section h2 {
   padding-top: calc(10rem * 2);
 }
 
+.row.last {
+  justify-content: space-evenly;
+}
+
 .row.last .person {
-    padding-top: calc(4rem * 2); 
+    padding-top: calc(2rem * 2); 
     padding-bottom: 4rem;
 }
 
