@@ -91,11 +91,17 @@ section h2 {
 
 .row.last .person {
     padding-top: calc(4rem * 2); 
+    padding-bottom: 4rem;
 }
 
 .person .name {
   font-size: 1.5625rem;
   line-height: 3.5625rem;
+}
+
+.profile {
+  width: 100%;
+  box-shadow: 40px 17px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -115,6 +121,7 @@ section h2 {
     color: var(--c-ylgf-green);
     padding: 1rem;
   }
+
   .row .person {
     padding-bottom: 4rem;
   }
@@ -129,20 +136,7 @@ section h2 {
   .row.last .person {
      padding-top: 0rem; 
   }
-  
-  .person .name {
-    font-size: 1.5625rem;
-    line-height: 3.5625rem;
-    text-align: center;
-  }
 }
-
-.profile {
-  width: 100%;
-  box-shadow: 40px 17px 30px 0 rgba(0, 0, 0, 0.15);
-}
-
-
 
 /* Footer */
 
