@@ -1,6 +1,7 @@
 html {
-  font-size: 2vmin;
+  font-size: 16px;
   --c-light-blue: #5acca0;
+  --c-ylgf-green:#05cf9d;
   --c-grey: #e8e6e6;
   --c-blue: #3a47e4;
   --c-white: #ffffff;
@@ -30,6 +31,30 @@ html {
 
 body {
   background: var(--c-blue);
+}
+
+header {
+  border-bottom: 1px solid #05cf9d;
+  color: var(--c-ylgf-green);
+}
+
+header h1 {
+  margin: 0;
+  line-height: 44px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  padding: 0.625rem;
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  padding-top: 20px;
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  border-left: 1px solid var(--c-ylgf-green);
+  border-right: 1px solid var(--c-ylgf-green);
 }
 
 h1 {
