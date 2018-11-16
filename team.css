@@ -36,11 +36,12 @@ header {
 header h1 {
   margin: 0;
   line-height: 44px;
-  font-size: 1.375rem;
+  font-size: 1.3rem;
   font-weight: 500;
   text-align: left;
   color: white;
   padding: 0.625rem;
+  text-transform: uppercase;
 }
 
 .container-fluid {
@@ -76,7 +77,7 @@ section h2 {
 }
 
 .row .person {
-  padding: 0 4.375rem 4.375rem 4.375rem;
+  padding: 0 4.375rem 0 4.375rem;
   width: 300px;
 }
 
@@ -84,15 +85,64 @@ section h2 {
   padding-top: calc(4rem * 2);
 }
 
-.profile {
-  width: 100%;
-  box-shadow: 40px 17px 30px 0 rgba(0, 0, 0, 0.15);
+.row.flat .person:nth-child(3n + 2) {
+  padding-top: calc(10rem * 2);
+}
+
+.row.last .person {
+    padding-top: calc(4rem * 2); 
 }
 
 .person .name {
   font-size: 1.5625rem;
   line-height: 3.5625rem;
 }
+
+@media (max-aspect-ratio: 1/1) {
+  section {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 2.8125rem;
+    color: var(--c-ylgf-green);
+    padding: 1rem;
+  }
+  .row .person {
+    padding-bottom: 4rem;
+  }
+
+  .row .person:nth-child(3n + 2) {
+    padding-top: 0rem;
+  }
+  
+  .row.flat .person:nth-child(3n + 2) {
+    padding-top: 0rem;
+  }
+  .row.last .person {
+     padding-top: 0rem; 
+  }
+  
+  .person .name {
+    font-size: 1.5625rem;
+    line-height: 3.5625rem;
+    text-align: center;
+  }
+}
+
+.profile {
+  width: 100%;
+  box-shadow: 40px 17px 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+
 
 /* Footer */
 
