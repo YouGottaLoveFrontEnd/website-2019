@@ -13,6 +13,10 @@ html {
   --grid-h: 4.44rem;
 }
 
+* {
+  text-decoration: none;
+  font-family: 'SofiaPro', sans-serif;
+}
 body {
   text-decoration: none;
   margin: 0;
