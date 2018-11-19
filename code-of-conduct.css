@@ -1,7 +1,7 @@
 html {
   font-size: 16px;
   --c-light-blue: #5acca0;
-  --c-ylgf-green:#05cf9d;
+  --c-ylgf-green: #05cf9d;
   --c-grey: #e8e6e6;
   --c-blue: #3a47e4;
   --c-white: #ffffff;
@@ -13,7 +13,6 @@ html {
   font-family: SofiaPro;
   src: url('assets/Sofia-Pro-Light.otf');
 }
-
 
 * {
   text-decoration: none;
@@ -118,7 +117,8 @@ footer p {
 }
 
 footer a {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   line-height: var(--grid-v);
   color: var(--c-blue);
   margin: 0 var(--grid-v);

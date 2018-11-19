@@ -1,17 +1,11 @@
 html {
-  font-size: 2vmin;
+  font-size: 16px;
   --c-light-green: #5acca0;
   --c-grey: #e8e6e6;
   --c-blue: #3a47e4;
   --c-white: #ffffff;
   --grid-v: 2.5rem;
   --grid-h: 4.44rem;
-}
-
-@media (max-aspect-ratio: 1/1) {
-  html {
-    font-size: 3vmin;
-  }
 }
 
 @font-face {
@@ -43,13 +37,13 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   padding-bottom: var(--grid-v);
   overflow: hidden;
   background-image: url('assets/bottom-background.png');
   background-position: bottom -9rem left 0;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 100%;
 }
 
 section {
@@ -102,7 +96,7 @@ section {
 @media (max-aspect-ratio: 1/1) {
   .title p {
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -136,6 +130,10 @@ section {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   background: var(--c-grey);
   padding: var(--grid-v) 0;
 }
@@ -153,7 +151,8 @@ footer p {
 }
 
 footer a {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   line-height: var(--grid-v);
   color: var(--c-blue);
 
