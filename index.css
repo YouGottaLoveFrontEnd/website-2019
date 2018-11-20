@@ -39,6 +39,7 @@ article {
   justify-content: center;
   padding-bottom: var(--grid-v);
   overflow: hidden;
+  height: 100vh;
   background-image: url('assets/bottom-background.png');
   background-position: bottom -9rem left 0;
   background-repeat: no-repeat;
