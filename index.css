@@ -46,6 +46,12 @@ article {
   background-size: contain;
 }
 
+@media (max-aspect-ratio: 1/1) {
+  article {
+    height: auto;
+  }
+}
+
 section {
   width: calc(var(--grid-h) * 4.5);
 }
